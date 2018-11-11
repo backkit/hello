@@ -7,12 +7,12 @@ const skipPrompt = process.env.NO_INTERACTIVE || process.env.NO_PROMPT ? true : 
 const skipAutoconf = process.env.NO_AUTOCONF ? true : false;
 
 const generate = (serviceName, moduleName, config) => {
-  const serviceDir = `${__dirname}/services`;
-  const servicePath = `${__dirname}/services/${serviceName}.js`;
-  const configDir = `${__dirname}/config`;
-  const configPath = `${__dirname}/config/${serviceName}.yml`;
-  const resourceBaseDir = `${__dirname}/res`;
-  const resourceDir = `${__dirname}/res/${serviceName}`;
+  const serviceDir = `${__dirname}/../../services`;
+  const servicePath = `${__dirname}/../../services/${serviceName}.js`;
+  const configDir = `${__dirname}/../../config`;
+  const configPath = `${__dirname}/../../config/${serviceName}.yml`;
+  const resourceBaseDir = `${__dirname}/../../res`;
+  const resourceDir = `${__dirname}/../../res/${serviceName}`;
 
   console.log("");
   console.log(`${serviceName} service config:`);
