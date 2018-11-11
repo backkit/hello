@@ -1,7 +1,7 @@
-module.exports = di => {
-  di.service('hello', () => {
-    return (name) => {
-      console.log(`hello ${name}`);
-    }
-  });
-};
+class Hello {
+  hello(name) {
+    console.log(`hello ${name}`);
+  }
+}
+
+module.exports = Hello;
